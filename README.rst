@@ -7,7 +7,7 @@ transonic-demos
    :target: https://mybinder.org/v2/gh/fluiddyn/transonic-demos/master
    :alt: mybinder
 
-A collection of notebooks showcasing how ``transonic_`` can be used.
+A collection of notebooks showcasing how transonic_ can be used.
 
 .. _transonic: https://transonic.readthedocs.io
 
