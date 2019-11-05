@@ -3,6 +3,10 @@
 **/__cython__/*
 **/__numba__/*
 **/__python__/*
+**/__pycache__/*
+
+# temporary files
+_*.py
 
 # pyenv
 .python-version
