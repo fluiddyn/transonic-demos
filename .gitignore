@@ -3,3 +3,6 @@
 **/__cython__/*
 **/__numba__/*
 **/__python__/*
+
+# pyenv
+.python-version

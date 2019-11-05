@@ -2,3 +2,4 @@ transonic
 pythran
 cython
 numba
+pandas

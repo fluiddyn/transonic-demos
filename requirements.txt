@@ -13,10 +13,13 @@ gast==0.3.2               # via beniget, pythran, transonic
 llvmlite==0.30.0          # via numba
 networkx==2.4             # via pythran
 numba==0.46.0
-numpy==1.17.3             # via numba, pythran, transonic
+numpy==1.17.3             # via numba, pandas, pythran, transonic
+pandas==0.25.3
 ply==3.11                 # via pythran
 pycodestyle==2.5.0        # via autopep8
+python-dateutil==2.8.1    # via pandas
 pythran==0.9.4.post0
-six==1.12.0               # via astunparse, pythran
+pytz==2019.3              # via pandas
+six==1.12.0               # via astunparse, python-dateutil, pythran
 transonic==0.4.2
 wheel==0.33.6             # via astunparse
