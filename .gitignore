@@ -10,3 +10,5 @@ _*.py
 
 # pyenv
 .python-version
+
+.vscode

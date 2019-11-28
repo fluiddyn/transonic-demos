@@ -3,3 +3,4 @@ pythran
 cython
 numba
 pandas
+numexpr
