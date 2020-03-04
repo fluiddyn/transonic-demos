@@ -1,6 +1,6 @@
 from numpy import *
-from numpy.fft import fft
-from numpy.fft import ifft
+from numpy.fft import rfft as fft
+from numpy.fft import irfft as ifft
 import timeit
 
 from transonic import jit, wait_for_all_extensions
@@ -105,10 +105,12 @@ def ksintegrate(u, Lx, dt, Nt):
 
 
 if __name__ == "__main__":
+  import sys
   # execute only if run as a script
   print(sys.argv[1])
   #print sys.argv[2]
 
-  wait_for_all_extensions()
   ksbenchmark(int(sys.argv[1]))
+  wait_for_all_extensions()
+  ksbenchmark(int(sys.argv[1]), printnorm=True)
 
