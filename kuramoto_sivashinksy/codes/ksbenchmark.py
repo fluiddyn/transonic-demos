@@ -1,8 +1,9 @@
 from numpy import *
 from numpy.fft import fft
 from numpy.fft import ifft
-from pylab import *
 import timeit
+
+from transonic import jit, wait_for_all_extensions
 
 
 def ksnorm(u) :
@@ -45,7 +46,9 @@ def ksbenchmark(Nx, printnorm=False) :
 
     print("avgtime == ", avgtime)
 
-def ksintegrate(u, Lx, dt, Nt) : 
+
+@jit
+def ksintegrate(u, Lx, dt, Nt):
     """ksintegrate: integrate kuramoto-sivashinsky equation (Python)
         u_t = -u*u_x - u_xx - u_xxxx, domain x in [0,Lx], periodic BCs 
 
@@ -101,10 +104,11 @@ def ksintegrate(u, Lx, dt, Nt) :
     return real(ifft(u));
 
 
-#if __name__ == "__main__":
-#    # execute only if run as a script
-#    print sys.argv[1]
-#    #print sys.argv[2]
-#
-#    ksbenchmark(int(sys.argv[1]))
+if __name__ == "__main__":
+  # execute only if run as a script
+  print(sys.argv[1])
+  #print sys.argv[2]
+
+  wait_for_all_extensions()
+  ksbenchmark(int(sys.argv[1]))
 
