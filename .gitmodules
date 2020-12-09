@@ -1,0 +1,6 @@
+[submodule "nbabel"]
+	path = nbabel
+	url = https://github.com/paugier/nbabel.git
+[submodule "efficient-sci-python"]
+	path = efficient-sci-python
+	url = https://codeberg.org/ashwinvis/efficient-sci-python.git
